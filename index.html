@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <title>week5_bootstrap</title>
+    <link rel="stylesheet" href="all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+            <div class="header">
+                <h1 class="mb-3 mt-4">Bootstrap grid examples</h1>
+                <h3 class="mb-3">Basic grid layouts to get you familiar with building within the Bootstrap grid system.</h3>
+                <p class="mb-3">In these examples the <span style= "color: #e83e8c;">.themed-grid-col</span> class is added to the columns to add some theming. This is not a class that is available in Bootstrap by default.</p>
+            </div>
+            <div class="part1">
+                <h2 class="mb-3">Five grid tiers</h2>
+                <p class="mb-3">There are five tiers to the Bootstrap grid system, one for each range of devices we support. Each tier starts at a minimum viewport size and automatically applies to the larger devices unless overridden.</p>
+                <div class="row mb-3">
+                    <div class="col-4 col-style">.col-4</div>
+                    <div class="col-4 col-style">.col-4</div>
+                    <div class="col-4 col-style">.col-4</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-4 col-style">.col-sm-4</div>
+                    <div class="col-sm-4 col-style">.col-sm-4</div>
+                    <div class="col-sm-4 col-style">.col-sm-4</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-4 col-style">.col-md-4</div>
+                    <div class="col-md-4 col-style">.col-md-4</div>
+                    <div class="col-md-4 col-style">.col-md-4</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12 col-lg-4 col-style">.col-lg-4</div>
+                    <div class="col-12 col-lg-4 col-style">.col-lg-4</div>
+                    <div class="col-12 col-lg-4 col-style">.col-lg-4</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12 col-xl-4 col-style">.col-xl-4</div>
+                    <div class="col-12 col-xl-4 col-style">.col-xl-4</div>
+                    <div class="col-12 col-xl-4 col-style">.col-xl-4</div>
+                </div>
+                <h2 class="mb-3">Three equal columns</h2>
+                <p class="mb-3">Get three equal-width columns <span style="font-weight: bold;">starting at desktops and scaling to large desktops.</span> On mobile devices, tablets and below, the columns will automatically stack.</p>
+                <div class="row mb-3">
+                    <div class="col-md-4 col-style">.col-md-4</div>
+                    <div class="col-md-4 col-style">.col-md-4</div>
+                    <div class="col-md-4 col-style">.col-md-4</div>
+                </div>
+                <h2 class="mb-3">Three unequal columns</h2>
+                <p class="mb-3">Get three columns <span style="font-weight: bold;">starting at desktops and scaling to large desktops</span> of various widths. Remember, grid columns should add up to twelve for a single horizontal block. More than that, and columns start stacking no matter the viewport.</p>
+                <div class="row mb-3">
+                    <div class="col-md-3 col-style">.col-md-3</div>
+                    <div class="col-md-6 col-style">.col-md-6</div>
+                    <div class="col-md-3 col-style">.col-md-3</div>
+                </div>
+                <h2 class="mb-3">Two columns</h2>
+                <p class="mb-3">Get two columns <span style="font-weight: bold;">starting at desktops and scaling to large desktops</span>.</p>
+                <div class="row mb-3">
+                    <div class="col-md-8 col-style">.col-md-8</div>
+                    <div class="col-md-4 col-style">.col-md-4</div>
+                </div>
+                <h2 class="mb-3">Full width, single column</h2>
+                <p class="mb-3" style="color: #ffc107;">No grid classes are necessary for full-width elements.</p>
+            </div>
+            <hr size="8px" align="center" width="100%" colo="#212529">
+            <div class="part2">
+                <h2 class="mb-3">Two columns with two nested columns</h2>
+                <p class="mb-3">Per the documentation, nesting is easy—just put a row of columns within an existing column. This gives you two columns <span style="font-weight: bold;">starting at desktops and scaling to large desktops</span>, with another two (equal widths) within the larger column.</p>
+                <p class="mb-3">At mobile device sizes, tablets and down, these columns and their nested columns will stack.</p>
+                <div class="row">
+                    <div class="col-md-8 col-style mb-mb-3">.col-md-8
+                        <div class="row mt-3">
+                            <div class="col-md-6 col-style">.col-md-6</div>
+                            <div class="col-md-6 col-style">.col-md-6</div>
+                        </div>
+                    </div> 
+                    <div class="col-md-4 col-style mb-3">.col-md-4</div>
+                </div>
+            </div>
+            <hr size="8px" align="center" width="100%" colo="#212529">
+            <div class="part3">
+                <h2 class="mb-3">Mixed: mobile and desktop</h2>
+                <p class="mb-3">The Bootstrap v4 grid system has five tiers of classes: xs (extra small), sm (small), md (medium), lg (large), and xl (extra large). You can use nearly any combination of these classes to create more dynamic and flexible layouts.</p>
+                <p class="mb-3">Each tier of classes scales up, meaning if you plan on setting the same widths for xs and sm, you only need to specify xs.</p>
+                <div class="row mb-3">
+                    <div class="col-12 col-md-8 col-style">.col-12 .col-md-8</div>
+                    <div class="col-6 col-md-4 col-style">.col-6 .col-md-4</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-6 col-md-4 col-style">.col-6 .col-md-4</div>
+                    <div class="col-6 col-md-4 col-style">.col-6 .col-md-4</div>
+                    <div class="col-6 col-md-4 col-style">.col-6 .col-md-4</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-6 col-style">.col-6</div>
+                    <div class="col-6 col-style">.col-6</div>
+                </div>
+            </div>
+            <hr size="8px" align="center" width="100%" colo="#212529">
+            <div class="part4">
+                <h2 class="mb-3">Mixed: mobile, tablet, and desktop</h2>
+                <div class="row mb-3">
+                    <div class="col-12 col-sm-6 col-lg-8 col-style">.col-12 .col-sm-6 .col-lg-8</div>
+                    <div class="col-6 col-lg-4 col-style">.col-6 .col-lg-4</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-6 col-sm-4 col-style">.col-6 .col-sm-4</div>
+                    <div class="col-6 col-sm-4 col-style">.col-6 .col-sm-4</div>
+                    <div class="col-6 col-sm-4 col-style">.col-6 .col-sm-4</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+        
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 300, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: true, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
+</body>
+</html>

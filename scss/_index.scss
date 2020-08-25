@@ -1,0 +1,43 @@
+.container{
+    max-width: 576px;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+h3{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.col-style{
+    border: 1px solid rgba(86, 61, 124, .2);
+    background-color: $color-primary;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+@media(min-width: 720px){
+    .container{
+        max-width: 720px;
+    }
+}
+
+
+@media(min-width: 960px){
+    .container{
+        max-width: 960px;
+    }
+    
+}
+
+
+
